@@ -1,0 +1,14 @@
+This is from a 100 projects to be build  using any  technology.
+url: https://www.florin-pop.com/blog/2019/09/100-days-100-projects/
+
+
+Project 1
+RandomMealGenerator
+https://www.florin-pop.com/blog/2019/09/random-meal-generator/
+
+
+Project 2
+Mood Calendar
+Example: https://codepen.io/FlorinPop17/full/eYOPdER    
+
+

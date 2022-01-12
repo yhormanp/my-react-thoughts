@@ -1,0 +1,38 @@
+.containerSub{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.subComponent {
+    width: 48%;
+
+}
+
+
+.divAsColumn{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+
+
+.buttonCtrl{
+    width: 100px;
+}
+
+.selectCtrl, .inputCtrl{
+    width: 180px;
+}
+
+.centered{
+    margin: 0 auto;
+}
+
+
+.conversions{
+    background-color: gray;
+    border-radius: 5px;
+    height: 30px;
+    margin-right: 10px;
+}

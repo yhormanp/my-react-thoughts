@@ -1,0 +1,103 @@
+:root {
+  --mood-color-1: #2d6b5f;
+  --mood-color-2: #72e3a6;
+  --mood-color-3: #dff4c7;
+  --mood-color-4: #edbf98;
+  --mood-color-5: #ea3d36;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 60vw;
+  /* background-color: lightgray; */
+}
+.mood-selector {
+  text-align: center;
+}
+
+.calendars-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 90%;
+}
+
+.calendar {
+  margin-bottom: 20px;
+}
+.calendar-title {
+  text-align: center;
+  margin: 10px;
+}
+.calendar-day {
+  background-color: lightgrey;
+  border-radius: 50%;
+  text-align: center;
+  width: 25px;
+  height: 20px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.calendar-day:hover {
+  transform: scale(1.2);
+}
+
+td {
+  text-align: center;
+}
+
+.empty {
+  background-color: white;
+}
+
+.mood-element {
+}
+
+.color-example {
+  width: 60%;
+  height: 15px;
+}
+
+.EX {
+  background-color: var(--mood-color-1);
+  cursor: pointer;
+}
+.HA {
+  background-color: var(--mood-color-2);
+  cursor: pointer;
+}
+.NE {
+  background-color: var(--mood-color-3);
+  cursor: pointer;
+}
+.SA {
+  background-color: var(--mood-color-4);
+  cursor: pointer;
+}
+.AN {
+  background-color: var(--mood-color-5);
+  cursor: pointer;
+}
+
+.moods-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mood-icon {
+  display: inline-block;
+  cursor: pointer;
+  margin-right: 20px;
+  font-size: 30px;
+}
+.mood-selected {
+  font-size: 50px;
+}
+.mood-icon:hover {
+  transform: scale(1.4);
+}
