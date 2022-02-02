@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import CustomHooksExContainer from './components/CustomHooksExample/CustomHooksExContainer';
 import MoodCalendarContainer from './components/MoodCalendar/MoodCalendarContainer';
 import IncrementDecrementApp from './components/ReduxIncrementDecrement/IncrementDecrementApp';
 import UseReducerExample from './components/useReducerExample/UseReducerExample';
@@ -9,7 +10,8 @@ import reportWebVitals from './reportWebVitals';
 ReactDOM.render(
   <React.StrictMode>
     {/* <MoodCalendarContainer></MoodCalendarContainer> */}
-    <UseReducerExample></UseReducerExample>
+    {/* <UseReducerExample></UseReducerExample> */}
+    <CustomHooksExContainer></CustomHooksExContainer>
   </React.StrictMode>,
   document.getElementById('root')
 );
