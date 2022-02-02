@@ -5,8 +5,10 @@ const useMarkedDays = (initialState = []) => {
 
   useEffect(() => {
     //getting info from the localStorage
+    
     const existentData = localStorage.getItem("moodCalendar");
     if (existentData) {
+      console.log('getting info from hook, and found', existentData)
       setMarkedDays(JSON.parse(existentData));
     }
   }, []);

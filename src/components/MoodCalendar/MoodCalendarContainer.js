@@ -4,11 +4,13 @@ import moment from "moment";
 import "./MoodCalendarStyles.css";
 import MoodSelector from "./MoodSelector";
 import useMarkedDays from "./customHooks/useMarkedDays";
+import Testingcomp from "./Testingcomp";
 
 function MoodCalendarContainer() {
   const [currentMood, setCurrentMood] = useState(null);
-  // const [markedDays, setMarkedDays] = useState([]);
+  const [isTest, setIsTest] = useState(false);
   const [markedDays, addDateAndMood] = useMarkedDays();
+
   // useEffect(() => {
   //   //getting info from the localStorage
   //   const existentData = localStorage.getItem("moodCalendar");
@@ -64,6 +66,9 @@ function MoodCalendarContainer() {
           );
         })}
       </div>
+
+
+      {isTest && <Testingcomp></Testingcomp>}
 
       {/* <Calendar year="2021" month="09"></Calendar> */}
     </div>

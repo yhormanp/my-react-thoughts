@@ -1,13 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-// import MoodCalendarContainer from './components/MoodCalendar/MoodCalendarContainer';
+import MoodCalendarContainer from './components/MoodCalendar/MoodCalendarContainer';
 import IncrementDecrementApp from './components/ReduxIncrementDecrement/IncrementDecrementApp';
+import UseReducerExample from './components/useReducerExample/UseReducerExample';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <IncrementDecrementApp></IncrementDecrementApp>
+    {/* <MoodCalendarContainer></MoodCalendarContainer> */}
+    <UseReducerExample></UseReducerExample>
   </React.StrictMode>,
   document.getElementById('root')
 );
