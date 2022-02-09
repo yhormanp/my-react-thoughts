@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import CustomHooksExContainer from './components/CustomHooksExample/CustomHooksExContainer';
 import MoodCalendarContainer from './components/MoodCalendar/MoodCalendarContainer';
+import ReactBatchContainer from './components/ReactBatchUpdating/ReactBatchContainer';
 import IncrementDecrementApp from './components/ReduxIncrementDecrement/IncrementDecrementApp';
 import UseReducerExample from './components/useReducerExample/UseReducerExample';
 import './index.css';
@@ -11,7 +12,8 @@ ReactDOM.render(
   <React.StrictMode>
     {/* <MoodCalendarContainer></MoodCalendarContainer> */}
     {/* <UseReducerExample></UseReducerExample> */}
-    <CustomHooksExContainer></CustomHooksExContainer>
+    {/* <CustomHooksExContainer></CustomHooksExContainer> */}
+    <ReactBatchContainer></ReactBatchContainer>
   </React.StrictMode>,
   document.getElementById('root')
 );
