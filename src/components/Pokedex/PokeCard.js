@@ -2,7 +2,7 @@ import React from "react";
 import "./PokeCard.css";
 function PokeCard({ pokemonData }) {
   return (
-    <div className={`poke-container ${pokemonData.data.types[0].type.name}`}>
+    <div  className={`poke-container ${pokemonData.data.types[0].type.name}`}>
       <section className="poke-img">
         <img
           src={pokemonData.data.sprites.front_shiny}

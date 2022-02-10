@@ -25,19 +25,16 @@ function Container() {
 
     setTemperature(temperatureValue);
 
-    console.log(temperatureValue);
   };
 
   const onTypeChange = (e) => {
     setTypeConversion(e.target.value);
     // cons
 
-    console.log(e.target.value);
   };
 
   const onInputChange = (e) => {
     setValueConvert(e.target.value);
-    console.log(e.target.value);
   };
   return (
     <div className="divAsColumn">
