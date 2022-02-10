@@ -22,7 +22,6 @@ ReactDOM.render(
         <Route path="memoization" element={<MemoizationContainer />} />
         <Route path="cvsf" element={<Container />} />
         <Route path="portaldemo" element={<PortalExampleContainer />} />
-        
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,
