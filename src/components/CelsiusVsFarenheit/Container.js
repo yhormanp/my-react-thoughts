@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Celsius from "./Celsius";
 import Farenheit from "./Farenheit";
-import './styles.css'
+import "./styles.css";
 
 function Container() {
   const [typeConversion, setTypeConversion] = useState("farenheit");
@@ -42,19 +42,30 @@ function Container() {
   return (
     <div className="divAsColumn">
       <label>Temperatura </label>
-      <input className="inputCtrl centered" type="text" onChange={(e) => onInputChange(e)}></input>
-      <select className="selectCtrl centered" value={typeConversion} onChange={(e) => onTypeChange(e)}>
+      <input
+        className="inputCtrl centered"
+        type="text"
+        onChange={(e) => onInputChange(e)}
+      ></input>
+      <select
+        className="selectCtrl centered"
+        value={typeConversion}
+        onChange={(e) => onTypeChange(e)}
+      >
         <option value="celsius">celsius</option>
         <option value="farenheit">farenheit</option>
       </select>
-      <button className="button centered" onClick={calculate}> Convert </button>
+      <button className="button centered" onClick={calculate}>
+        {" "}
+        Convert{" "}
+      </button>
       <div className="containerSub">
         <div className="subComponent">
           <span>Celsius</span>
           <Celsius value={temperature.celsius}></Celsius>
         </div>
 
-        <div className="subComponent" >
+        <div className="subComponent">
           <span>Farenheit</span>
           <Farenheit value={temperature.farenheit}></Farenheit>
         </div>

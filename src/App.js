@@ -1,5 +1,6 @@
 // import logo from './logo.svg';
 import "./App.css";
+import { Link } from "react-router-dom";
 import Container from "./components/CelsiusVsFarenheit/Container";
 // import Comparison from './components/useStateVsUseRef/Comparison';
 // import TodoHead from './components/MyTodoApp/TodoHead';
@@ -14,21 +15,18 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
-        <label> Creating a temperature converter celsius - farenheit </label>
-        <Container />
-        <br />
-        {/* <label > Comparison between useRef and UseState </label>
-        <Comparison/>
-       */}
-        <br />
-        {/* <TodoApp></TodoApp> */}
-        <br />
-        {/* <IncrementDecrementApp /> */}
-        qty users: {users.data.length}
-        qty posts: {posts.data.length}
-      </header>
-      <br />
+      {/* <header className="App-header"> */}
+        <div>
+          <nav>
+            <Link to="/moodCalendar">Mood Calendar</Link> |
+            <Link to="/reducerExample">useReducer Example</Link> |
+            <Link to="/pokedex">Pokedex App</Link> |
+            <Link to="/memoization">Memoization example</Link> |
+            <Link to="/cvsf">Celsius vs Farenheit</Link> |
+            <Link to="/portaldemo">Portal demo</Link> |
+          </nav>
+        </div>
+      {/* </header> */}
     </div>
   );
 }

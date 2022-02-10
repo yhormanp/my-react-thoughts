@@ -1,0 +1,13 @@
+.poke-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-left: 5px;
+    width: 80vw;
+    margin: auto
+    
+}
+
+.pokedex-title{
+    text-align: center;
+}

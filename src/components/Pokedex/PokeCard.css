@@ -1,0 +1,93 @@
+:root {
+  --background-color: rgb(199, 199, 199);
+  --img-background-color: rgba(255, 255, 255, 0.6);
+  --id-background-color: rgba(0, 0, 0, 0.1);
+  --maxWidth: 150px;
+
+  --psychic-color:  rgb(234, 237, 161);
+  --water-color: rgb(222, 243, 253);
+  --rock-color: rgb(244, 231, 218);
+  --bug-color:  rgb(248, 213, 163);
+  --fire-color:  rgb(253, 223, 223);
+  --electric-color: rgb(252, 247, 222);
+  --normal-color: rgb(245, 245, 245);
+  --fighting-color: rgb(195 184 162);;
+}
+
+.poke-container {
+  width: var(--maxWidth);
+  background-color:var(--background-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7px;
+  border: 1px solid;
+  flex: 1 1 180px;
+  flex-grow: 0;
+  /* flex-basis: 1; */
+
+}
+
+.poke-img {
+  width: 110px;
+  border-radius: 50%;
+  background-color: var(--img-background-color);
+  text-align: center;
+}
+
+.poke-id {
+  width: 80px;
+  border-radius: 5px;
+  background-color: var(--id-background-color);
+  text-align: center;
+  padding: 2px;
+  margin: 8px;
+}
+
+.poke-title {
+  width: var(--maxWidth);
+  text-align: center;
+  font-size: 22px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+
+.poke-type{
+    margin: 10px;
+    text-transform: capitalize;
+}
+
+
+.psychic {
+    background-color: var(--psychic-color);
+}
+
+.water {
+    background-color: var(--water-color);
+}
+
+.rock{
+    background-color: var(--rock-color);
+}
+
+.bug {
+    background-color: var(--bug-color);
+}
+
+.fire {
+    background-color: var(--fire-color);
+}
+
+.electric{
+    background-color: var(--electric-color);
+}
+
+ .normal{
+     background-color: var(--normal-color);
+ }
+
+ .fighting{
+     background-color: var(--fighting-color);
+ }
