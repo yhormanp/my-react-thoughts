@@ -6,7 +6,7 @@ import TodoList from "./TodoList";
 
 function TodoApp() {
   const [taskList, setTaskList] = useState(null);
-  
+
   //   const myListOfTasks = [];
   const onAddNewTask = (taskToAdd) => {
     if (taskList === null) {
@@ -19,19 +19,26 @@ function TodoApp() {
   };
 
   const onCompletedTask = (completedTask) => {
-      if ( taskList){
-        const copyList = [...taskList];
-        const indexToUpdate = copyList.findIndex(x=> x.id === completedTask.id);
-        copyList[indexToUpdate] = {...copyList[indexToUpdate], completed: !completedTask.completed}
-        setTaskList( copyList);
-        // console.log( copyList);
-      }
-  }
+    if (taskList) {
+      const copyList = [...taskList];
+      const indexToUpdate = copyList.findIndex(
+        (x) => x.id === completedTask.id
+      );
+      copyList[indexToUpdate] = {
+        ...copyList[indexToUpdate],
+        completed: !completedTask.completed,
+      };
+      setTaskList(copyList);
+      // console.log( copyList);
+    }
+  };
 
   const onRemoveTask = (taskToBeRemoved) => {
     if (taskList) {
       console.log(taskList);
-      const indexToRemove = [...taskList].findIndex(x=> x.id === taskToBeRemoved.id);
+      const indexToRemove = [...taskList].findIndex(
+        (x) => x.id === taskToBeRemoved.id
+      );
       let modList = [...taskList];
       modList.splice(indexToRemove, 1);
       setTaskList(modList);
@@ -42,17 +49,20 @@ function TodoApp() {
     taskList,
     onAddNewTask,
     onCompletedTask,
-    onRemoveTask
-
-}
+    onRemoveTask,
+  };
 
   return (
     <div>
-        <dataContext.Provider value ={contextToShare}>
-      <TodoHead onAddNewTask={onAddNewTask}></TodoHead>
-      {taskList && <span> Task List</span> && (
-        <TodoList taskList={taskList}  /*onRemoveTask={onRemoveTask} onCompletedTask={onCompletedTask} */ ></TodoList>
-      )}
+      <dataContext.Provider value={contextToShare}>
+        <TodoHead onAddNewTask={onAddNewTask}></TodoHead>
+        {taskList && <span> Task List</span> && (
+          <TodoList
+            taskList={
+              taskList
+            } /*onRemoveTask={onRemoveTask} onCompletedTask={onCompletedTask} */
+          ></TodoList>
+        )}
       </dataContext.Provider>
     </div>
   );

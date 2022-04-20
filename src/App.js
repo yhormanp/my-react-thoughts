@@ -24,6 +24,17 @@ function App() {
             <Link to="/memoization">Memoization example</Link> |
             <Link to="/cvsf">Celsius vs Farenheit</Link> |
             <Link to="/portaldemo">Portal demo</Link> |
+            <Link to="/errorboundary">Error Boundary</Link> |
+            <Link to="/statefullandstateless" >Stateful and Statelss</Link> |
+            <Link to="/contextapi" >Context Api </Link> |
+            <Link to="/lazysuspense" > Lazy loading example </Link> |
+            <Link to="/private1" > Secure Route </Link> |
+            <Link to="/oauthgoogle" > oAuth2 Google </Link> |
+            <Link to="/redirect" > redirect page </Link> |
+            <Link to="/callback" > callback page </Link> |
+            <Link to="/main" > Main page </Link> |
+            <Link to="/testinglogin" > testing login</Link> |
+
           </nav>
         </div>
       {/* </header> */}

@@ -1,0 +1,2 @@
+(this["webpackJsonpmy-react-thoughts"]=this["webpackJsonpmy-react-thoughts"]||[]).push([[3],{75:function(e,s,t){"use strict";t.r(s);var n=t(0);s.default=function(e){var s=e.artistsList;return Object(n.jsxs)(n.Fragment,{children:[Object(n.jsx)("h1",{children:"MTV Base Headline Artists 2019"}),s.map((function(e){return Object(n.jsxs)("div",{children:[Object(n.jsx)("h2",{children:e.name}),Object(n.jsxs)("p",{children:[" genre: ",e.genre]}),Object(n.jsxs)("p",{children:[" Albums Released: ",e.albums]})]},e.id)}))]})}}}]);
+//# sourceMappingURL=3.754e5041.chunk.js.map

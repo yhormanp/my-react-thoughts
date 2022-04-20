@@ -1,0 +1,124 @@
+:root {
+  --background-color: #ffff;
+  --obscure-background: #000000;
+  --general-font-color: #000000;
+  --banner-font-color: #ffff;
+  --title-text-color: #393939;
+  --subtext-color:#393939;
+  --footer-background: #f9f9f9;
+
+  --working-area: 1600px;
+  --maximum-width: 1660px;
+  font-size: 62.5%;
+}
+.nav__top-banner {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+
+  align-items: center;
+  color: var(--banner-font-color);
+  height: 40px;
+  font-size: 1.5rem;
+}
+.nav__top-banner-black {
+  background-color: var(--obscure-background);
+}
+
+.container {
+  width: var(--working-area);
+  font-weight: 500;
+  max-width: 1660px;
+}
+
+.container__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 40px;
+  width: var(--working-area);
+  max-width: var(--maximum-width);
+  padding: 30px 30px;
+  margin: auto; 
+}
+
+.wrapper__title {
+  background-image: url(https://n.nordstrommedia.com/alias/nordstrom-logo.svg);
+  background-repeat: no-repeat;
+  width: 198px;
+  height: 25px;
+}
+
+.wrapper__options {
+  display: flex;
+  flex-direction: row;
+  /* background-color: red; */
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper__search {
+  font-size: 1.6rem;
+  width: 100px;
+  display: inherit;
+  justify-content: center;
+  align-items: center;
+  /* background-color: yellow; */
+}
+
+.wrapper__user {
+  width: 250px;
+  font-size: 1.6rem;
+}
+
+.container__general-text {
+  font-family: Brandon Text, Arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.4;
+  font-size: 1.47rem;
+}
+
+
+.container__navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    left: 0px;
+    align-items: flex-start;
+    padding-left: 0;
+    list-style-type:none;
+    margin-top: 25px;
+}
+
+.container__navigation button{
+    
+    border: 0;
+    background-color: transparent;
+    font-size: 1.3rem;
+    padding: 0;
+}
+
+.container__title-text{
+    font-weight: 400;
+    margin: 0 0 5px;
+    font-size: 2.3rem;
+    color: var(--title-text-color);
+    line-height: 1.4;
+}
+.container__subtext{
+    color: var(--subtext-color);
+    font-size: 1.1rem;
+}
+
+
+.footer{
+    background-color: var(--footer-background);
+    width: 100%;
+    height: 100px;
+    padding-top:20px;
+}
+.footer__group{
+    width: var(--working-area);
+    margin: auto;
+    
+}
